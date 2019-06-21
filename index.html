@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div>
+    <div class="jumbotron">
         <h1>Order your Beautiful Pizza Here</h1>
         <img src="img/pizzalove.jpg" alt="Pizza Pie Moon Love">
 
@@ -28,19 +28,19 @@
                         <label for="size">Select Pizza Size:</label>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="size" value="0" checked>
+                                <input type="radio" name="size" value="Small" checked>
                                 Small
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="size" value="1">
+                                <input type="radio" name="size" value="Medium">
                                 Medium
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="size" value="2">
+                                <input type="radio" name="size" value="Large">
                                 Large
                             </label>
                         </div>
@@ -49,19 +49,19 @@
                         <label for="sauce">Select Sauce Type:</label>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="sauce" value="0" checked>
+                                <input type="radio" name="sauce" value="Hearty Marinara" checked>
                                 Hearty Marinara
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="sauce" value="1">
+                                <input type="radio" name="sauce" value="Creamy Alfredo">
                                 Creamy Alfredo
                             </label>
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="sauce" value="2">
+                                <input type="radio" name="sauce" value="Tangy BBQ">
                                 Tangy BBQ
                             </label>
                         </div>
@@ -78,10 +78,14 @@
                         <input type="checkbox" name="topping" value="Extra Cheese">Extra Cheese<br>
                     </div>
                     <button type="submit" name="addOrderBtn">Add to Order!</button>
-                    <button type="button" name="finishOrder">Checkout!</button>
+                    
                 </form>
+                <button type="button" id="finishOrder">Checkout!</button>
             </div>
-            <div class="col-6" id="currentOrder">
+            <div class="col-6" >
+                <div id="currentOrder"></div>
+                <div id="runningtotal"></div>
+                <div id="totalOut"></div>
 
             </div>
 

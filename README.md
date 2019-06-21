@@ -12,10 +12,13 @@ PizzaPie Procurement is a web application that provides users a fun way to order
 * CSS
 * Bootsrap
 
-## BeepBoop Specs
+## PizzaPie Procurement Specs
+1. Start Odering Button
 
 | Behaviors       | Input          | Output      |
 | ---------------- |:------------:| :--------------:|
+| Clicking on the "Start Odering" button causes the order form to fade into view. | click on button | order form appears and Start Odering button dissapears | 
+| 
 
 
 ## Additional Features
