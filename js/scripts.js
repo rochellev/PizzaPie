@@ -34,8 +34,8 @@ Order.prototype.assignId = function(){
 $(document).ready(function(){
     $("#startOrder").click(function(event){
         event.preventDefault();
-        $("#startOrder").hide(150);
-        $("#form").show(200);
+        $("#startOrder").fadeOut();
+        $("#form").fadeIn();
        
     })
 })
