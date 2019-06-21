@@ -19,5 +19,5 @@ PizzaPie Procurement is a web application that provides users a fun way to order
 
 
 ## Additional Features
-
+* Created test script to debug the backend logic. I have commented out the reference to this script in the final version.
 
