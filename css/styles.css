@@ -2,6 +2,7 @@ body {
    background-color: antiquewhite; 
 }
 
-#form {
+#formContainer {
     display: none;
 }
+

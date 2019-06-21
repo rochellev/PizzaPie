@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <script src='js/jquery-3.4.1.js'>
     </script>
     <script src="js/scripts.js"></script>
     <script src="js/testScript.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Pizza Pie Precurement</title>
-  </head>
-  <body>
-      <h1>Order your Beautiful Pizza Here</h1>
+</head>
+
+<body>
+    <h1>Order your Beautiful Pizza Here</h1>
     <div class="container">
         <button id="startOrder" type="button" class="btn btn-primary">Start Ordering</button>
-      <form id="form" action="index.html" method="post">
-        <label for="pizza">I want my pizza</label>
-        <input id = "newListInput" type="input" >
-        <button type="submit" name="button">Order!</button>
+        <div id="formContainer">
+            <form id="form" action="index.html" method="post">
+                <div class="form-group">
+                    <label for="size">Select Pizza Size:</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="0" checked>
+                            Small
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="1">
+                            Medium
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="2">
+                            Large
+                        </label>
+                    </div>
 
-        <ul class = "destinationList">
+                </div>
+                <div class="form-group">
+                    <label for="sauce">Select Sauce Type:</label>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="sauce" value="0" checked>
+                            Hearty Marinara
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="sauce" value="1">
+                            Creamy Alfredo
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="sauce" value="2">
+                            Tangy BBQ
+                        </label>
+                    </div>
 
-        </ul>
-      </form>
+                </div>
+                <div class="form-group">
+                    <label for="topping">Select Pizza Toppings:</label><br>
+                    <input type="checkbox" name="topping" value="meditate">Pepperoni<br>
+                    <input type="checkbox" name="topping" value="Exercise">Sausage<br>
+                    <input type="checkbox" name="topping" value="breathe">Chicken<br>
+                    <input type="checkbox" name="topping" value="hydrate">Bacon<br>
+                    <input type="checkbox" name="topping" value="breathe">Ham<br>
+                    <input type="checkbox" name="topping" value="walk">Onion<br>
+                    <input type="checkbox" name="topping" value="breathe">Hot Peppers<br>
+                    <input type="checkbox" name="topping" value="breathe">Extra Cheese<br>
+                </div>
+                <button type="submit" name="submitOrderBtn">Order!</button>
+
+                <ul class="destinationList">
+
+                </ul>
+            </form>
+        </div>
+
     </div>
-  </body>
+</body>
+
 </html>
