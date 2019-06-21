@@ -28,3 +28,14 @@ Order.prototype.assignId = function(){
     this.id++
     return this.id;
 }
+
+// ## Front-End Logic
+
+$(document).ready(function(){
+    $("#startOrder").click(function(event){
+        event.preventDefault();
+        $("#startOrder").hide(150);
+        $("#form").show(200);
+       
+    })
+})
