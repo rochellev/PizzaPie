@@ -6,7 +6,7 @@
     <script src='js/jquery-3.4.1.js'>
     </script>
     <script src="js/scripts.js"></script>
-    <script src="js/testScript.js"></script>
+    <!-- <script src="js/testScript.js"></script> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -14,7 +14,13 @@
 </head>
 
 <body>
-    <h1>Order your Beautiful Pizza Here</h1>
+    <div>
+        <h1>Order your Beautiful Pizza Here</h1>
+        <img src="img/pizzalove.jpg" alt="Pizza Pie Moon Love">
+
+    </div>
+
+
     <div class="container">
         <button id="startOrder" type="button" class="btn btn-primary">Start Ordering</button>
         <div id="formContainer">
@@ -65,16 +71,16 @@
                 </div>
                 <div class="form-group">
                     <label for="topping">Select Pizza Toppings:</label><br>
-                    <input type="checkbox" name="topping" value="meditate">Pepperoni<br>
-                    <input type="checkbox" name="topping" value="Exercise">Sausage<br>
-                    <input type="checkbox" name="topping" value="breathe">Chicken<br>
-                    <input type="checkbox" name="topping" value="hydrate">Bacon<br>
-                    <input type="checkbox" name="topping" value="breathe">Ham<br>
-                    <input type="checkbox" name="topping" value="walk">Onion<br>
-                    <input type="checkbox" name="topping" value="breathe">Hot Peppers<br>
-                    <input type="checkbox" name="topping" value="breathe">Extra Cheese<br>
+                    <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
+                    <input type="checkbox" name="topping" value="Sausage">Sausage<br>
+                    <input type="checkbox" name="topping" value="Chicken">Chicken<br>
+                    <input type="checkbox" name="topping" value="Bacon">Bacon<br>
+                    <input type="checkbox" name="topping" value="Ham">Ham<br>
+                    <input type="checkbox" name="topping" value="Onion">Onion<br>
+                    <input type="checkbox" name="topping" value="Hot Peppers">Hot Peppers<br>
+                    <input type="checkbox" name="topping" value="Extra Cheese">Extra Cheese<br>
                 </div>
-                <button type="submit" name="submitOrderBtn">Order!</button>
+                <button type="submit" name="addOrderBtn">Add to Order!</button>
 
                 <ul class="destinationList">
 

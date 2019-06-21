@@ -1,7 +1,7 @@
-function Pizza(size, sauce, toppings) {
+function Pizza(size, sauce) {
     this.size = size,
         this.sauce = sauce,
-        this.toppingArray = Array(toppings)
+        this.toppingArray = []
 }
 
 Pizza.prototype.printPizza = function () {
@@ -29,14 +29,39 @@ Order.prototype.assignId = function () {
     return this.id;
 }
 
+function calculateTotal(order){
+    return 10;
+}
+
+function getInputs(){
+    debugger;
+    var newPizza = new Pizza();
+    newPizza.size = parseInt($("input:radio[name=size]:checked").val());
+    newPizza.sauce = parseInt($("input:radio[name=sauce]:checked").val());
+
+    $("input:checkbox[name=topping]:checked").each(function(){
+         newPizza.toppingArray.push($(this).val());
+         console.log(newPizza.toppingArray.length)
+        
+      });
+      return newPizza;
+    
+}
+
 // ## Front-End Logic
+var myOrder = new Order();
 
 $(document).ready(function () {
     $("#startOrder").click(function (event) {
-        event.preventDefault();
         $("#startOrder").fadeOut();
         $("#formContainer").fadeIn();
 
+    })
+    $("#form").submit(function(event){
+        event.preventDefault();
+        var inputPizza = getInputs();
+        inputPizza.printPizza();
+        
     })
 })
 
