@@ -19,7 +19,7 @@ Order.prototype.printOrder = function () {
     console.log("id = " + this.id + "\n" + "pizzaArray = " + this.pizzaArray + "\n" + "completeOrder = " + this.completeOrder + "\n");
 }
 
-Order.prototype.addOrder = function (newPizza) {
+Order.prototype.addToOrder = function (newPizza) {
     this.pizzaArray.push(newPizza);
     this.assignId;
 }
@@ -29,12 +29,19 @@ Order.prototype.assignId = function () {
     return this.id;
 }
 
-function calculateTotal(order){
-    return 10;
+// given and order, returns the total cost of order
+Order.prototype.calculateTotal = function() {
+    return this.pizzaArray.length*10;
+//    this.pizzaArray.forEach(function(pie){
+
+//    })
 }
 
+// ## Front-End Logic
+
+
+// returns a Pizza object with the correct user requests
 function getInputs(){
-    debugger;
     var newPizza = new Pizza();
     newPizza.size = parseInt($("input:radio[name=size]:checked").val());
     newPizza.sauce = parseInt($("input:radio[name=sauce]:checked").val());
@@ -48,11 +55,16 @@ function getInputs(){
     
 }
 
-// ## Front-End Logic
+function displayOrder(){
+    $("#currentOrder").append("<div> Your total is " + myOrder.calculateTotal() + "</div>");
+
+}
+
+
 var myOrder = new Order();
 
 $(document).ready(function () {
-    $("#startOrder").click(function (event) {
+    $("#startOrder").click(function () {
         $("#startOrder").fadeOut();
         $("#formContainer").fadeIn();
 
@@ -60,8 +72,14 @@ $(document).ready(function () {
     $("#form").submit(function(event){
         event.preventDefault();
         var inputPizza = getInputs();
-        inputPizza.printPizza();
+        myOrder.addToOrder(inputPizza);
+        displayOrder();
+       
+        
         
     })
+    // $("#finishOrder").click(function(){
+
+    // })
 })
 

@@ -3,9 +3,9 @@ var myPizza = new Pizza(2, 2, mytops)
 myPizza.printPizza();
 
 var myOrder = new Order();
-myOrder.addOrder(myPizza);
+myOrder.addToOrder(myPizza);
 var theType = typeof myOrder.pizzaArray[0];
 console.log("type of thing in pizza array " + theType);
 myOrder.printOrder();
-myOrder.addOrder(new Pizza(1,2, ["pepperoni", "ham"]));
+myOrder.addToOrder(new Pizza(1,2, ["pepperoni", "ham"]));
 myOrder.printOrder();

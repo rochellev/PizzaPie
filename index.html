@@ -19,74 +19,76 @@
         <img src="img/pizzalove.jpg" alt="Pizza Pie Moon Love">
 
     </div>
-
-
     <div class="container">
         <button id="startOrder" type="button" class="btn btn-primary">Start Ordering</button>
-        <div id="formContainer">
-            <form id="form" action="index.html" method="post">
-                <div class="form-group">
-                    <label for="size">Select Pizza Size:</label>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="0" checked>
-                            Small
-                        </label>
+        <div class="row">
+            <div class="col-4" id="formContainer">
+                <form id="form" action="index.html" method="post">
+                    <div class="form-group">
+                        <label for="size">Select Pizza Size:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="size" value="0" checked>
+                                Small
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="size" value="1">
+                                Medium
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="size" value="2">
+                                Large
+                            </label>
+                        </div>
                     </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="1">
-                            Medium
-                        </label>
+                    <div class="form-group">
+                        <label for="sauce">Select Sauce Type:</label>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="sauce" value="0" checked>
+                                Hearty Marinara
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="sauce" value="1">
+                                Creamy Alfredo
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="sauce" value="2">
+                                Tangy BBQ
+                            </label>
+                        </div>
                     </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="size" value="2">
-                            Large
-                        </label>
+                    <div class="form-group">
+                        <label for="topping">Select Pizza Toppings:</label><br>
+                        <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
+                        <input type="checkbox" name="topping" value="Sausage">Sausage<br>
+                        <input type="checkbox" name="topping" value="Chicken">Chicken<br>
+                        <input type="checkbox" name="topping" value="Bacon">Bacon<br>
+                        <input type="checkbox" name="topping" value="Ham">Ham<br>
+                        <input type="checkbox" name="topping" value="Onion">Onion<br>
+                        <input type="checkbox" name="topping" value="Hot Peppers">Hot Peppers<br>
+                        <input type="checkbox" name="topping" value="Extra Cheese">Extra Cheese<br>
                     </div>
+                    <button type="submit" name="addOrderBtn">Add to Order!</button>
+                    <button type="button" name="finishOrder">Checkout!</button>
+                </form>
+            </div>
+            <div class="col-6" id="currentOrder">
 
-                </div>
-                <div class="form-group">
-                    <label for="sauce">Select Sauce Type:</label>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="sauce" value="0" checked>
-                            Hearty Marinara
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="sauce" value="1">
-                            Creamy Alfredo
-                        </label>
-                    </div>
-                    <div class="radio">
-                        <label>
-                            <input type="radio" name="sauce" value="2">
-                            Tangy BBQ
-                        </label>
-                    </div>
+            </div>
 
-                </div>
-                <div class="form-group">
-                    <label for="topping">Select Pizza Toppings:</label><br>
-                    <input type="checkbox" name="topping" value="Pepperoni">Pepperoni<br>
-                    <input type="checkbox" name="topping" value="Sausage">Sausage<br>
-                    <input type="checkbox" name="topping" value="Chicken">Chicken<br>
-                    <input type="checkbox" name="topping" value="Bacon">Bacon<br>
-                    <input type="checkbox" name="topping" value="Ham">Ham<br>
-                    <input type="checkbox" name="topping" value="Onion">Onion<br>
-                    <input type="checkbox" name="topping" value="Hot Peppers">Hot Peppers<br>
-                    <input type="checkbox" name="topping" value="Extra Cheese">Extra Cheese<br>
-                </div>
-                <button type="submit" name="addOrderBtn">Add to Order!</button>
-
-                <ul class="destinationList">
-
-                </ul>
-            </form>
         </div>
+
+
+
 
     </div>
 </body>
