@@ -1,8 +1,27 @@
 body {
-   background-color: antiquewhite; 
+   background-color: #BDD5EA ;
 }
 
 #formContainer {
     display: none;
 }
 
+.topheader {
+    background-color: #577399;
+    
+    
+}
+
+
+.titlestyle {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40pt;
+}
+
+
+
+/* 
+font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;
+ */
