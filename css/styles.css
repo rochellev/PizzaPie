@@ -19,9 +19,26 @@ body {
     font-size: 40pt;
 }
 
+h5 {
+    text-align: center;
+    padding-top: 30px;
+}
+
 
 
 /* 
 font-family: 'Raleway', sans-serif;
 font-family: 'Playfair Display', serif;
  */
+
+ #StartOrder {
+     display: flex;
+     
+ }
+ .btncontainer {
+     text-align: center;
+ }
+
+ #formContainer {
+     font-size: 16pt;
+ }
